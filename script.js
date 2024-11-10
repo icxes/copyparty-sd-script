@@ -1,9 +1,9 @@
-if (localStorage.getItem('sdImageProomptKey') === null) { localStorage.setItem('sdImageProomptKey', 'copyparty') };
+if (localStorage.getItem('sdImageProomptKey') === null) { localStorage.setItem('sdImageProomptKey', 'parameters') };
 if (localStorage.getItem('toggleProomptState') === null) { localStorage.setItem('toggleProomptState', 'show') };
 if (localStorage.getItem('toggleKeyInputState') === null) { localStorage.setItem('toggleKeyInputState', 'show') };
 
 const paths = []; // paths to run script on, checks if full url contains whatever you put here
-const keyToFind = localStorage.getItem('sdImageProomptKey') // what key/property to look for in the image data (default "copyparty") (use "parameters" to get full generation info)
+const keyToFind = localStorage.getItem('sdImageProomptKey') // what key/property to look for in the image data (default "parameters")
 const logging = false;
 
 document.body.insertAdjacentHTML('afterbegin', '<div id="sd-proompt-container" style="position: fixed; bottom: 2.5rem; left: 50%; transform: translateX(-50%); background-color: white; color: black; padding: 10px 20px; border-radius: 5px; font-size: 20px; font-family: monospace; z-index: 9999; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 10px; max-width: 100%; overflow-wrap: break-word; display: none;"></div>')
